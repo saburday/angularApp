@@ -1,0 +1,6 @@
+<div class="note {{note.color}}">
+  <h4>{{i}}</h4>
+  {{note.text}}
+  <button (click)="removeNote( i )">Remove note</button>
+  <color-editor [color]="note.color" (changingColor)="changeColor( i, $event )"></color-editor>
+</div>

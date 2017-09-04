@@ -1,0 +1,8 @@
+<add-note></add-note>
+<div class="notes">
+  <note
+    *ngFor="let n of notes; let i = index"
+    [note]="n"
+    [i]="i"
+  ></note>
+</div>

@@ -1,0 +1,8 @@
+<div class="color_editor">
+  <div
+    class="color_editor__color {{c}}"
+    *ngFor="let c of colors"
+    [class.chosen]="color === c"
+    (click)="changeColor( c )"
+  ></div>
+</div>
